@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 14),rgb(1, 104, 97));
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    margin-top: 3rem;
+    box-shadow: 0 0 10px cyan,0 0 40px cyan;
+    background: rgb(0, 18, 22);
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.team-members {
+    display: none;
+}
+.btn{
+    width: 100px;
+    align-items: end;
+    float: right;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+h2{
+    color: rgb(0, 15, 74);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow:0 0 2px cyan,0 0 15px cyan; 
+}
+.selectevent{
+    color: rgba(0, 255, 255, 0.722);
+    font-size: 20px;
+    font-weight: bold;
+}
+#event{
+    background-color: rgb(0, 0, 88);
+    color: rgb(165, 255, 255);
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 470px;
+}
+#event:hover{
+    box-shadow:0 0 2px cyan,0 0 10px cyan ;
+}
+
+#submit{
+    color: aliceblue;
+    background-color: rgb(0, 0, 37);
+    border: none;
+    box-shadow:0 0 2px cyan,0 0 15px cyan ;
+}
+#cancel{
+    color: aliceblue;
+    background-color: rgb(0, 0, 37);
+    border: none;
+    box-shadow:0 0 3px rgb(255, 98, 0),0 0 15px rgb(255, 98, 0) ;
+}
+#submit:hover{
+    color: rgb(0, 0, 37);
+    background-color: cyan;
+    border: none;
+}
+#cancel:hover{
+    background-color: rgb(255, 34, 0);
+    border: none;
+}
+.input_header{
+    color: rgb(196, 228, 255);
+    font-size: 17px;
+    font-weight: bold;
+}
+.input{
+    width: 450px;
+    font-size: 16px;
+    font-weight: bold;
+}
+#successMessage{
+    color: rgb(0, 185, 0);
+    font-size: 17px;
+    text-shadow: 0 0 2px rgb(171, 254, 171),0 0 15px rgb(173, 255, 173);
+    display: none;
+}

@@ -1,0 +1,78 @@
+.event-main-img {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+   .robo-race-rulebook{
+      position: absolute;
+      left: 60rem;
+   }
+   .event-btn{
+    background-color: rgb(2, 225, 225);
+    cursor: pointer;
+    color: #020016;
+    border: none;
+    border-radius: 0.5rem;
+    height: 3rem;
+    width: 8rem;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 0 10px cyan,0 0 25px cyan;
+   }
+   .para{
+    text-align: justify;
+   }
+       
+   .event-registration-btn{
+    
+    background-color:#020016;
+    height: 3.75rem;
+    width: 10rem;
+    font-size: 1.25rem;
+    border: 0;  
+    display: inline;
+    text-align: center;
+    color: #d0d0d0;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px cyan,0 0 25px cyan;  
+    cursor: pointer;    
+   }
+   .event-registration-btn:hover{
+    background-color: rgb(2, 225, 225);
+    color: #020016;
+ 
+   }
+   .robo-sumo-rulebook{
+      position: absolute;
+      left: 40rem;
+      
+   }
+   .robo-soccer-rulebook{
+    position: absolute;
+    left: 40rem;
+   }
+   .line-follower-rulebook{
+    position: absolute;
+    left: 42rem;
+   }
+   .drone-league-rulebook{
+    position: absolute;
+    left: 42rem;
+   }
+   .hackathon-rulebook{
+    position: absolute;
+    left: 37rem;
+   }
+   .codathon-rulebook{
+    position: absolute;
+    left: 37rem;
+   }
+   h2{
+      font-size: 30px;
+      color: rgb(0, 105, 110);
+      font-weight: bolder;
+      text-shadow: 0 0 3px cyan,0 0 20px cyan;
+   }
+   /* .upperbar{
+      position: fixed;
+   } */

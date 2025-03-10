@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event Registration</title>
+    <link rel="stylesheet" href="registration.css">
+    <link rel="shortcut icon" href="images/adastralogo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <h2>ADASTRA'25 Event Registration</h2>
+        <form id="registrationForm" method="post" action="https://script.google.com/macros/s/AKfycbx7qVfDqu64GH9WP2V1iqmPmQDzsgpcY1lVQ5yKcGNyekBwUF3RhbV7OPnQXdX_HRsY/exec" name="registration_form">
+            <label class="selectevent" for="event">Select Event</label>
+            <select id="event" name="event" required>
+                <option value="">Select</option>
+                <option value="Robo race">Death Race</option>
+                <option value="Robo sumo">Robo Sumo</option>
+                <option value="Line follower">Line Follower</option>
+                <option value="Robo soccer">Robo Soccer</option>
+                <option value="Drone league">Drone League</option>
+                <option value="Hackathon">Hackathon</option>
+                <option value="Codathon">Codathon</option>
+            </select>
+
+            <div id="team-details" class="team-members">
+                <label class="input_header" for="teamName">Team Name</label>
+                <input class="input" type="text" id="teamName" name="teamName" required>
+
+                <label class="input_header" for="leaderName">Team Leader Name</label>
+                <input class="input" type="text" id="leaderName" name="leaderName" required>
+
+                <label class="input_header" for="leaderEmail">Leader Email</label>
+                <input class="input" type="email" id="leaderEmail" name="leaderEmail" required>
+
+                <label class="input_header" for="leaderPhone">Leader Phone Number</label>
+                <input class="input" type="tel" id="leaderPhone" name="leaderPhone" required>
+
+                <div class="input_header input" id="teamMembers" name="membersName"></div>
+            </div>
+
+            <button id="submit" class="btn" type="submit" value="submit">Register</button>
+            <button id="cancel" class="btn" type="button"  onclick="window.location.href='event.html'">Cancel</button>
+           
+        </form>
+        <p id="successMessage">Registration successful !</p>
+    </div>
+
+    <script src="registration.js"></script>
+</body>
+
+</html>

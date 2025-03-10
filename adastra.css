@@ -1,0 +1,647 @@
+body {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+    font-style: normal; */
+  margin: 0.25rem;
+  color: #fff;
+}
+
+
+
+.font-page {
+  position: relative;
+  display: flex;
+
+  padding: 0.5rem;
+  /* background: url("Avengers\ group.jpg"); */
+  background-size: cover;
+  flex-direction: column;
+  /* background-color: #470024; */
+  background-color: #000000;
+}
+
+.upprbar {
+  /* background-color: #251101; */
+  width: 640px;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+h4,h1 {
+  color: rgb(0, 158, 158);
+  text-shadow: 0 0 1px rgb(65, 172, 226), 0 0 0px rgb(65, 172, 226);
+  font-style: italic;
+}
+p {
+  color: rgb(236, 255, 255);
+  text-shadow: 0 0 5px rgb(65, 172, 226), 0 0 20px rgb(65, 172, 226);
+  font-style: italic;
+}
+.nav {
+  background-color: #03001d;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 6.25rem;
+  width: 92rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.nav .logo {
+  position: relative;
+  padding-right: 500px;
+  bottom: 1rem;
+}
+
+.nav .nav-option a {
+  cursor: pointer;
+  color: rgb(0, 156, 156);
+  font-weight: bold;
+  animation: left 5s;
+}
+
+.nav .nav-option a:hover {
+  font-size: 17px;
+  color: rgb(2, 225, 225);
+  font-weight: bold;
+  text-shadow: 0 0 10px rgb(38, 169, 234), 0 0 25px rgb(38, 169, 234);
+}
+
+.nav:hover {
+  animation-duration: 3s;
+  animation-name: slide-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.home-page .adastra img {
+  width: 650px;
+  height: 650px;
+  transform: rotate(270deg);
+  position: relative;
+  top: -2rem;
+  left: 28rem;
+}
+
+
+#Register {
+  color: rgb(0, 156, 156);
+  background-color: #03001d;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+#Register:hover {
+  scroll-behavior: auto;
+  font-size: 17px;
+  color: rgb(2, 225, 225);
+  font-weight: bold;
+  text-shadow: 0 0 5px rgb(38, 169, 234), 0 0 25px rgb(38, 169, 234);
+}
+
+@keyframes button-effect {
+  0% {
+    transform: translateY(200px);
+  }
+
+  100% {
+    /* margin-top: 100px; */
+    transform: translateY(-10px);
+  }
+}
+
+.btn {
+  position: relative;
+  top: -250px;
+  background-color: #020016;
+  height: 3.75rem;
+  width: 10rem;
+  margin-left: 43rem;
+  font-size: 1.25rem;
+  border: 1px solid cyan;
+  display: inline;
+  text-align: center;
+  color: #d0d0d0;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  box-shadow: 0 0 5px cyan, 0 0 15px cyan;
+  cursor: pointer;
+  animation-name: button-effect;
+  animation-duration: 1.5s;
+}
+
+@media (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+}
+
+.btn:hover {
+  background-color: rgb(2, 225, 225);
+  color: #020016;
+}
+
+.sticky-nav {
+  /* position: sticky; */
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  z-index: 10;
+}
+
+.adastra-logo {
+  height: 10rem;
+  animation: right 1.5s;
+}
+
+@keyframes right {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.adastra-font {
+  height: 10rem;
+  rotate: 90px;
+}
+
+.nav-option {
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+.main-content {
+  display: flex;
+  background-color: #121212;
+  padding: 1rem 5rem 0 5rem;
+  top: 2rem;
+  flex-direction: column;
+}
+
+.about-us-details {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-us-img {
+  size: 30rem;
+}
+.about-us-img img {
+  height: 33rem;
+}
+
+.about-us-para {
+  margin: 2rem;
+  line-height: 32px;
+  text-align: justify;
+}
+.about-us-png {
+  width: 40rem;
+  padding: 3rem 0 1rem 0;
+}
+.about-us-divider {
+  margin-top: 8rem;
+  opacity: 0.5;
+  margin-bottom: 6rem;
+}
+
+
+.teaser-details {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.teaser-img {
+  size: 20rem;
+}
+
+.teaser-para {
+  margin-top: -2rem;
+  margin: 1.5rem;
+  line-height: 32px;
+  text-align: justify;
+}
+
+.teaser-png {
+  width: 40rem;
+}
+
+.teaser-divider {
+  margin-top: 8rem;
+  opacity: 0.5;
+  margin-bottom: 6rem;
+}
+.time-line {
+  height: 42rem;
+}
+
+.time-line-header {
+  display: flex;
+  justify-content: space-between;
+}
+.roadmap-download-btn {
+  background-color: rgb(2, 225, 225);
+  cursor: pointer;
+  color: #020016;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 8rem;
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 0 0 10px cyan, 0 0 25px cyan;
+}
+
+.time-line-img {
+  width: 8rem;
+  height: 10rem;
+  margin-right: 2rem;
+}
+
+.roadmap-img {
+  width: 85rem;
+  height: 30rem;
+}
+
+.time-line-divider {
+  margin-top: 8rem;
+  opacity: 0.5;
+  margin-bottom: 6rem;
+}
+
+.event-font-img {
+  height: 30rem;
+  width: 83rem;
+  padding-left: 4rem;
+}
+.event-page {
+  background-color: #121212;
+}
+
+/* robo-race */
+
+.robo-race {
+  padding-left: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.robo-race-header-rulebook {
+  display: flex;
+}
+
+.robo-race-rulebook {
+  margin-left: 15rem;
+  margin-top: 1.5rem;
+}
+
+.robo-race-rulebook-btn {
+  background-color: #0659b3;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.robo-race-registration-btn {
+  margin-left: 17rem;
+  margin-top: 1.5rem;
+}
+
+.robo-race-registration-btn {
+  background-color: #0659b3;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.robo-race-img-details {
+  display: flex;
+}
+
+.robo-race-png {
+  height: 25rem;
+  width: 50rem;
+}
+
+.robo-race-details {
+  padding-top: 1rem;
+  padding-left: 4rem;
+  line-height: 32px;
+  margin-right: 1rem;
+  justify-content: space-evenly;
+}
+
+/* robo-sumo */
+
+.robo-sumo {
+  padding-left: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.robo-sumo-header-rulebook {
+  display: flex;
+}
+
+.robo-sumo-rulebook {
+  margin-left: 35rem;
+  margin-top: 1.5rem;
+}
+
+.robo-sumo-btn {
+  background-color: #0659b3;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.robo-sumo-img-details {
+  display: flex;
+}
+
+.robo-sumo-png {
+  height: 25rem;
+  width: 50rem;
+}
+
+.robo-sumo-details {
+  padding-top: 1rem;
+  padding-left: 4rem;
+  line-height: 32px;
+  margin-right: 1rem;
+  justify-content: space-evenly;
+}
+
+/* Robo soccer */
+
+.robo-soccer {
+  padding-left: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  margin-bottom: 10rem;
+}
+.robo-soccer-header-rulebook {
+  display: flex;
+}
+
+.robo-soccer-rulebook {
+  margin-left: 35rem;
+  margin-top: 1.5rem;
+}
+
+.robo-soccer-btn {
+  background-color: #0659b3;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.robo-soccer-img-details {
+  display: flex;
+}
+.robo-soccer-png {
+  height: 25rem;
+  width: 50rem;
+}
+
+.robo-soccer-details {
+  padding-top: 1rem;
+  padding-left: 4rem;
+  line-height: 32px;
+  margin-right: 1rem;
+  justify-content: space-evenly;
+}
+
+/* line-follower */
+.line-follower {
+  padding-left: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.line-follower-header-rulebook {
+  display: flex;
+}
+
+.line-follower-rulebook {
+  margin-left: 35rem;
+  margin-top: 1.5rem;
+}
+
+.line-follower-btn {
+  background-color: #0659b3;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.line-follower-img-details {
+  display: flex;
+}
+
+.line-follower-png {
+  height: 25rem;
+  width: 50rem;
+}
+
+.line-follower-details {
+  padding-top: 1rem;
+  padding-left: 4rem;
+  line-height: 32px;
+  margin-right: 1rem;
+  justify-content: space-evenly;
+}
+
+/* Drone league */
+.drone-league {
+  padding-left: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.drone-league-header-rulebook {
+  display: flex;
+}
+
+.drone-league-rulebook {
+  margin-left: 35rem;
+  margin-top: 1.5rem;
+}
+
+.drone-league-btn {
+  background-color: #0659b3;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.drone-league-img-details {
+  display: flex;
+}
+
+.drone-league-png {
+  height: 30rem;
+  width: 50rem;
+}
+
+.drone-league-details {
+  padding-top: 0.5rem;
+  padding-left: 4rem;
+  line-height: 32px;
+  margin-right: 1rem;
+  justify-content: space-evenly;
+}
+
+/* Hackathon */
+.hackathon {
+  padding-left: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.hackathon-header-rulebook {
+  display: flex;
+}
+
+.hackathon-rulebook {
+  margin-left: 35rem;
+  margin-top: 1.5rem;
+}
+
+.hackathon-btn {
+  background-color: #0659b3;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.hackathon-img-details {
+  display: flex;
+}
+
+.hackathon-png {
+  height: 25rem;
+  width: 50rem;
+}
+
+.hackathon-details {
+  padding-top: 1rem;
+  padding-left: 4rem;
+  line-height: 32px;
+  margin-right: 1rem;
+  justify-content: space-evenly;
+}
+
+/* codathon */
+.codathon {
+  padding-left: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.codathon-header-rulebook {
+  display: flex;
+}
+
+.codathon-rulebook {
+  margin-left: 35rem;
+  margin-top: 1.5rem;
+}
+
+.codathon-btn {
+  background-color: #0659b3;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.codathon-img-details {
+  display: flex;
+}
+
+.codathon-png {
+  height: 25rem;
+  width: 50rem;
+}
+
+.codathon-details {
+  padding-top: 1rem;
+  padding-left: 4rem;
+  line-height: 32px;
+  margin-right: 1rem;
+  justify-content: space-evenly;
+}
+
+/* techquiz */
+.techquiz {
+  padding-left: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.techquiz-header-rulebook {
+  display: flex;
+}
+
+.techquiz-rulebook {
+  margin-left: 35rem;
+  margin-top: 1.5rem;
+}
+
+.techquiz-btn {
+  background-color: #0659b3;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 8rem;
+  font-size: 1rem;
+}
+
+.techquiz-img-details {
+  display: flex;
+}
+
+.techquiz-png {
+  height: 25rem;
+  width: 50rem;
+}
+
+.techquiz-details {
+  padding-top: 1rem;
+  padding-left: 4rem;
+  line-height: 32px;
+  margin-right: 1rem;
+  justify-content: space-evenly;
+}
