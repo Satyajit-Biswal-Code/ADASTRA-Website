@@ -23,7 +23,7 @@ const eventSelect = document.getElementById("event");
                     label.innerText = `Team Member ${i} Name `;
                     let input = document.createElement("input");
                     input.type = "text";
-                    input.name = member${ i };
+                    input.name = `member${ i }`;
                     teamMembers.appendChild(label);
                     teamMembers.appendChild(input).style.cssText="font-size:16px; font-weight:bold";
                 }
